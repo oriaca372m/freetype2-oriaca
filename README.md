@@ -6,7 +6,7 @@ Qtのフォントの描画が、GTKと比べて明らかに太くてかっこ悪
 ![ビフォー](./img/before.png)
 
 アフター
-![アフター](./img/before.png)
+![アフター](./img/after.png)
 
 # ビルドとインストール
 ``` bash
