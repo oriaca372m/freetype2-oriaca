@@ -1,0 +1,25 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: oriaca <oriaca372m@outlook.jp>
+Date: Fri, 2 Jul 2021 23:54:07 +0900
+Subject: [PATCH] Disable darkening
+
+---
+ src/psaux/psft.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/psaux/psft.c b/src/psaux/psft.c
+index 41c1654..1f38c9b 100644
+--- a/src/psaux/psft.c
++++ b/src/psaux/psft.c
+@@ -407,7 +407,7 @@
+       font->renderingFlags = 0;
+       if ( hinted )
+         font->renderingFlags |= CF2_FlagsHinted;
+-      if ( scaled && ( !no_stem_darkening_font        ||
++      if ( FALSE && scaled && ( !no_stem_darkening_font        ||
+                        ( no_stem_darkening_font < 0 &&
+                          !no_stem_darkening_driver  ) ) )
+         font->renderingFlags |= CF2_FlagsDarkened;
+-- 
+2.32.0
+
